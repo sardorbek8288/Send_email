@@ -76,7 +76,7 @@ public class AuthRepositoty {
         for (Auth a : authList) {
             if (a.getEmail().equals(email) ) {
                 System.out.println("email  topildi .....");
-                if (a.getPassword().equals(password)) {
+                if (a.getPassword().equals(password) && a.getStatus == Status.ACTIVE) {
                     System.out.println("Kod");
                 }
                 return "Xush kelibsiz";
